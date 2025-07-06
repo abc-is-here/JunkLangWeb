@@ -351,3 +351,10 @@ footer {
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
+
+.note{
+  text-align: center;
+  font-size: 1vw;
+  color: #8a8a8a;
+  margin-bottom: 20px;
+}
