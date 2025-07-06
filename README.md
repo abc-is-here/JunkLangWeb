@@ -136,7 +136,7 @@ junklang hello.jnk
 ## Developer Setup
 
 ```bash
-git clone https://github.com/abc-is-here/junkLangWeb.git
+git clone [https://github.com/abc-is-here/junkLangWeb.git](https://github.com/abc-is-here/JunkLangWeb.git)
 cd junklang
 pip install .
 ```
