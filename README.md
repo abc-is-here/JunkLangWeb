@@ -128,7 +128,7 @@ barf("Something went wrong!")
 ## Run a `.jnk` File
 
 ```bash
-junk hello.jnk
+junklang hello.jnk
 ```
 
 ---
@@ -136,7 +136,7 @@ junk hello.jnk
 ## Developer Setup
 
 ```bash
-git clone https://github.com/yourname/junklang.git
+git clone https://github.com/abc-is-here/junkLangWeb.git
 cd junklang
 pip install .
 ```
