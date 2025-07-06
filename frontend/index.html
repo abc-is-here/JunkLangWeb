@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JunkLang - The junk language</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <section id="intro">
+      <div class="introtext">
+        <h1 class="head1"><span>Junk</span>Lang</h1>
+        <p class="introtex"><span>Stay Hungry.</span>Stay Foolish.</p>
+        <div class="cp">
+          <p>pip install junklang</p>
+          <button style="font-size:24px; background-color: #272727; outline: none; color: #fbe8a6; cursor: pointer; border: none;" onclick="copy()" id="cp"><i class="fa fa-copy"></i></button>
+        </div>
+        <div class="headlinks">
+          <a href="#playground">Playground</a>
+          <a href="#">View Source</a>
+        </div>
+        <p class="attr">
+          Made by <span><a href="#">@abhay</a></span>
+        </p>
+      </div>
+      <img src="assets/burger.png" alt="burger" class="burger" />
+      <img src="assets/coke.png" alt="coke" class="coke" />
+      <img src="assets/pizza.png" alt="pizza" class="pizza" />
+    </section>
+    <section id="playground">
+      <div class="pg">
+        <div class="topcon">
+          <h2>Playground</h2>
+          <div class="but">
+            <button id="runBtn">Run</button>
+            <button id="clearBtn">Clear</button>
+          </div>
+        </div>
+        <textarea
+          name="pg"
+          id="pg"
+          placeholder="Write your .jnk code here..."
+        ></textarea>
+        <pre id="output" class="output">Output will appear here...</pre>
+      </div>
+    </section>
+    <section id="doc">
+      <div class="upcon">
+        <h2>Documentation</h2>
+        <p class="docintro">
+          JunkLang is a simple, esoteric programming language designed for fun!
+          And I won't mind if you call it junk!
+        </p>
+      </div>
+      <div class="terminal usage"><p>Usage:&nbsp;&nbsp;junklang {filename}.jnk</p></div>
+      <div class="explnr">
+        <div class="exp">
+          <hr />
+          <h3>Variables</h3>
+          <p>Variables are defined using the keyword <span>order</span>.</p>
+          <div class="ex">
+            <p class="use">Example:</p>
+            <div class="excode">
+              <p><span>1.</span>order chicken = 5</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp">
+          <hr />
+          <h3>Arithmetic</h3>
+          <p>
+            Arithmetic operations use the standard
+            <span>+, -, *, /</span> with the keyword <span>eat</span>.
+          </p>
+          <div class="ex">
+            <p class="use">Example:</p>
+            <div class="excode">
+              <p><span>1.</span>order chicken = 5</p>
+              <p><span>2.</span>order fries = 2</p>
+              <p><span>3.</span>order total = eat chicken + fries</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp">
+          <hr />
+          <h3>Input</h3>
+          <p>Input is taken using <span>open your mouth and say</span>.</p>
+          <div class="ex">
+            <p class="use">Example:</p>
+            <div class="excode">
+              <p><span>1.</span>order coke = 2</p>
+              <p><span>2.</span>open your mouth and say burger</p>
+              <p><span>3.</span>order total = eat coke + burger</p>
+              <p><span>4.</span>whisper total</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp">
+          <hr />
+          <h3>Output</h3>
+          <p>Use <span>whisper</span> to print output.</p>
+          <div class="ex">
+            <p class="use">Example:</p>
+            <div class="excode">
+              <p><span>1.</span>whisper "I love junk food"</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp">
+          <hr />
+          <h3>Functions</h3>
+          <p>Functions are defined using <span>reheat: name ... done</span>. And then called using <span>deliver()</span></p>
+          <div class="ex">
+            <p class="use">Example:</p>
+            <div class="excode">
+              <p><span>1.</span>reheat: doubleIt</p>
+              <p><span>2.</span>order result = eat burgers * 2</p>
+              <p><span>3.</span>done</p>
+              <p><span>4.</span>order doubled = deliver(doubleIt)</p>
+              <p><span>5.</span>whisper "Doubled burgers: " + doubled</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp">
+          <hr />
+          <h3>Conditionals</h3>
+          <p>
+            Conditionals are written as
+            <span
+              >if you like ... more than / less than / equal to ... else ...
+              done</span
+            >.
+          </p>
+          <div class="ex">
+            <p class="use">Example:</p>
+            <div class="excode">
+              <p><span>1.</span>if you like meal more than 5:</p>
+              <p><span>2.</span>&nbsp;&nbsp;whisper "That's a big meal!"</p>
+              <p><span>3.</span>else:</p>
+              <p><span>4.</span>&nbsp;&nbsp;whisper "That's a snack."</p>
+              <p><span>5.</span>done</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp">
+          <hr />
+          <h3>Loops</h3>
+          <p>Loops are defined using <span>until thirsty ... done</span>.</p>
+          <div class="ex">
+            <p class="use">Example:</p>
+            <div class="excode">
+              <p><span>1.</span>order counter = 0</p>
+              <p><span>2.</span>until thirsty counter < 3:</p>
+              <p>
+                <span>3.</span>&nbsp;&nbsp;whisper "Still hungry " + counter
+              </p>
+              <p><span>4.</span>&nbsp;&nbsp;order counter = eat counter + 1</p>
+              <p><span>5.</span>done</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp">
+          <hr />
+          <h3>Comments</h3>
+          <p>Use <span>hungry</span> to add comments.</p>
+          <div class="ex">
+            <p class="use">Example:</p>
+            <div class="excode">
+              <p><span>1.</span>hungry This is not read!</p>
+            </div>
+          </div>
+        </div>
+        <div class="exp">
+          <hr />
+          <h3>Error Handling</h3>
+          <p>Use <span>barf("message")</span> to raise errors.</p>
+          <div class="ex">
+            <p class="use">Example:</p>
+            <div class="excode">
+              <p><span>1.</span>barf("Oops! We dropped your sandwich.")</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; 2025 Abhay Gupta</p>
+      </footer>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
