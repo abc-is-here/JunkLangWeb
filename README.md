@@ -14,7 +14,7 @@
 - `until thirsty <condition>` loops  
 - Input with `open your mouth and say`  
 - Custom errors with `barf("message")`  
-- CLI interpreter (`junk program.jnk`)
+- CLI interpreter (`junklang program.jnk`)
 
 ---
 
