@@ -9,7 +9,7 @@ def parse_junk(code):
 
     while i < len(lines):
         line = lines[i].strip()
-        if not line or line.startswith('hungry'):
+        if not line or line.startswith('hungry') or line=='done':
             i += 1
             continue
 
