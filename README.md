@@ -1,5 +1,7 @@
 # JunkLang
 
+(You can try it live at https://abhayis.me/junklang/)
+
 **JunkLang** is a junk food-themed esoteric programming language where your code tastes as good as it runs. Inspired by BhaiLang and other meme langs, I won't mind if you call this a piece of junk!
 
 ---
@@ -14,7 +16,7 @@
 - `until thirsty <condition>` loops  
 - Input with `open your mouth and say`  
 - Custom errors with `barf("message")`  
-- CLI interpreter (`junk program.jnk`)
+- CLI interpreter (`junklang program.jnk`)
 
 ---
 
@@ -128,7 +130,7 @@ barf("Something went wrong!")
 ## Run a `.jnk` File
 
 ```bash
-junk hello.jnk
+junklang hello.jnk
 ```
 
 ---
@@ -136,7 +138,7 @@ junk hello.jnk
 ## Developer Setup
 
 ```bash
-git clone https://github.com/yourname/junklang.git
+git clone https://github.com/abc-is-here/junkLangWeb.git
 cd junklang
 pip install .
 ```
