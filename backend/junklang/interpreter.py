@@ -1,6 +1,4 @@
 import re
-import sys
-import os
 
 def parse_junk(code):
     lines = code.strip().split('\n')
