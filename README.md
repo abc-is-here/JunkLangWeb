@@ -1,6 +1,6 @@
 # JunkLang
 
-(You can try it live at https://abhayis.me/junklang/)
+(You can try it live at https://junklangweb.netlify.app/)
 
 **JunkLang** is a junk food-themed esoteric programming language where your code tastes as good as it runs. Inspired by BhaiLang and other meme langs, I won't mind if you call this a piece of junk!
 
